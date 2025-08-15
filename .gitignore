@@ -1,0 +1,30 @@
+﻿# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# n8n data
+.n8n/
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.cursor/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
