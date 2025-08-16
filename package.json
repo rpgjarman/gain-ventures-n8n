@@ -1,0 +1,13 @@
+﻿{
+  "name": "gain-ventures-n8n",
+  "version": "1.0.0",
+  "description": "VC Deal Flow Automation",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "build": "echo Build complete"
+  },
+  "dependencies": {
+    "n8n": "latest"
+  }
+}

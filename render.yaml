@@ -1,0 +1,18 @@
+﻿services:
+  - type: web
+    name: gain-ventures-n8n
+    env: node
+    buildCommand: npm install -g n8n
+    startCommand: n8n start
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        sync: false
+      - key: N8N_BASIC_AUTH_PASSWORD
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
+      - key: N8N_HOST
+        sync: false
+    autoDeploy: false

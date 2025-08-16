@@ -1,25 +1,12 @@
-﻿# Gain Ventures VC Automation - n8n Workflows
+﻿# Gain Ventures n8n Automation
 
-## Project Overview
-Automated VC sourcing and diligence workflows using n8n.
+VC Deal Flow Automation using n8n deployed on Render.
 
-### Current Workflows:
-1. **Sourcing Pipeline**: YC + Product Hunt → Airtable
-   - Runs daily at 4:30 PM EST
-   - Processes ~5,400 companies
-   - Deduplication and normalization included
+## Workflows
+- **Sourcing**: YC + Product Hunt → Airtable (Daily 4:30 PM ET)
+- **AI Diligence**: Coming soon
+- **Outreach**: Coming soon
+- **Portfolio Monitoring**: Coming soon
 
-### Deployment:
-- Hosted on Render (free tier)
-- URL: https://gain-ventures-n8n.onrender.com
-- Login: admin / GainVentures2025!
-
-### API Keys Needed:
-- Airtable API Key
-- Airtable Base ID
-
-### Workflow Status:
-- ✅ YC + Product Hunt sourcing
-- 🔄 Contact enrichment (next phase)
-- ⏳ AI diligence system (planned)
-- ⏳ Email outreach (planned)
+## Deployment
+Deployed on Render.com free tier with automatic scheduling.
