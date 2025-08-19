@@ -4,10 +4,11 @@
   "description": "VC Deal Flow Automation",
   "main": "index.js",
   "scripts": {
-    "start": "n8n start",
+    "start": "mkdir -p /tmp/n8n && n8n start",
     "build": "echo Build complete"
   },
   "dependencies": {
-    "n8n": "latest"
+    "n8n": "latest",
+    "sqlite3": "^5.1.6"
   }
 }

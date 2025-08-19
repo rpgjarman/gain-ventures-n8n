@@ -2,17 +2,31 @@
   - type: web
     name: gain-ventures-n8n
     env: node
-    buildCommand: npm install -g n8n
-    startCommand: n8n start
+    buildCommand: npm install -g n8n && npm install sqlite3
+    startCommand: mkdir -p /tmp/n8n && n8n start
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
-        sync: false
+        value: "robertpj235@gmail.com"
       - key: N8N_BASIC_AUTH_PASSWORD
-        sync: false
-      - key: WEBHOOK_URL
-        sync: false
+        value: "Rj#2547392"
+      - key: N8N_USER_FOLDER
+        value: "/tmp/n8n"
+      - key: N8N_ENCRYPTION_KEY
+        value: "GainVenturesN8NEncryption2025Key"
+      - key: DB_TYPE
+        value: "sqlite"
+      - key: DB_SQLITE_DATABASE
+        value: "/tmp/n8n/database.sqlite"
       - key: N8N_HOST
-        sync: false
+        value: "gain-ventures-n8n.onrender.com"
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_PROTOCOL
+        value: "https"
+      - key: WEBHOOK_URL
+        value: "https://gain-ventures-n8n.onrender.com"
+      - key: N8N_RUNNERS_ENABLED
+        value: "true"
     autoDeploy: false
